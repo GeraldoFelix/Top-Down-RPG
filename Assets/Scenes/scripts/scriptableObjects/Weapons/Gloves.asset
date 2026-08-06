@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef4e53e9af084bc4b9e1d101bfac08ba, type: 3}
+  m_Name: Gloves
+  m_EditorClassIdentifier: 
+  attack_damage: 3
+  attack_speed: 2
+  attack_range: 1
+  weapon_icon: {fileID: -5480349818986425464, guid: c030732880fdc4e4abcce6e430e0c9ed, type: 3}
+  weapon_name: Gloves
+  weapon_price: 55
