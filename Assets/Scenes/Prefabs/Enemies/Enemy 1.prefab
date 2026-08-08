@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4994298627066302007}
   - component: {fileID: 1491815824067964933}
-  - component: {fileID: 4076081549886514177}
   - component: {fileID: 6038894757372793901}
   - component: {fileID: 6933446847181709126}
   - component: {fileID: 831227336340896891}
@@ -91,18 +90,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4076081549886514177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 796551137663702041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d16ca880e2fc56043a8f95406913ebd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6038894757372793901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,14 +115,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 128cbfd56d281be44a36372eca35752c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  max_hp: 10
+  max_hp: 5
   hp: 0
   base_speed: 0.5
-  attack_damage: 5
+  attack_damage: 1
   attack_speed: 1
-  attack_range: 5
-  attack_life: 5
+  attack_range: 2
+  attack_life: 10
   gold_carry: 0
+  spawnManager: {fileID: 0}
 --- !u!61 &831227336340896891
 BoxCollider2D:
   m_ObjectHideFlags: 0

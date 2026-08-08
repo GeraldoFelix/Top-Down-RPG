@@ -11,6 +11,8 @@ public class Entity : MonoBehaviour
     public float attack_life;
     public int gold_carry;
 
+    public SpawnManager spawnManager;
+
     void Start()
     {
         hp = max_hp;
@@ -25,9 +27,16 @@ public class Entity : MonoBehaviour
     void Death()
     {
         if (hp <= 0)
-        {
+        {   
+            // da ouro
             if (this.gameObject.tag != "Player") {
                 InventoryManager.Instance.GoldAdd(100);
+            }
+
+            // conta quantas entidades tem no campo apos a morte de um
+            if (this.gameObject.tag == "Enemy")
+            {
+                spawnManager.enemies_alives--;
             }
             Destroy (this.gameObject);
         }

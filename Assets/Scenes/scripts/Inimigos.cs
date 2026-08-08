@@ -10,6 +10,7 @@ public class Inimigos : MonoBehaviour
 
     float move_speed;
 
+
     void Start()
     {
         enemy_stats = gameObject.GetComponent<Entity>();
