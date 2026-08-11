@@ -10,8 +10,13 @@ public class Entity : MonoBehaviour
     public float attack_range;
     public float attack_life;
     public int gold_carry;
+    public int exp_carry;
 
     public SpawnManager spawnManager;
+
+    // xp jogador
+    public int level = 1;
+    public int exp = 0;
 
     void Start()
     {
@@ -31,6 +36,7 @@ public class Entity : MonoBehaviour
             // da ouro
             if (this.gameObject.tag != "Player") {
                 InventoryManager.Instance.GoldAdd(100);
+                GameObject.FindGameObjectWithTag("Player").GetComponent<Entity>().AddExp(exp_carry);
             }
 
             // conta quantas entidades tem no campo apos a morte de um
@@ -47,5 +53,16 @@ public class Entity : MonoBehaviour
     {
         hp -= hp_to_update;
         Death();
+    }
+
+    void AddExp(int exp_)
+    {
+        exp += exp_;
+
+        if (exp >= level * 100)
+        {
+            level++;
+            exp = 0;
+        }
     }
 }

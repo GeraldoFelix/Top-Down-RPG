@@ -18,3 +18,4 @@ MonoBehaviour:
   weapon_icon: {fileID: 4089665655704165475, guid: c030732880fdc4e4abcce6e430e0c9ed, type: 3}
   weapon_name: Hammer
   weapon_price: 75
+  attack_life: 3

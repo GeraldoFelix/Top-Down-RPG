@@ -18,3 +18,4 @@ MonoBehaviour:
   weapon_icon: {fileID: 4447365576401915982, guid: c030732880fdc4e4abcce6e430e0c9ed, type: 3}
   weapon_name: Shield
   weapon_price: 50
+  attack_life: 2

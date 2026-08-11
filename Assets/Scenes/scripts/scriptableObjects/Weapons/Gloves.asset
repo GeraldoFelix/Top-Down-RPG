@@ -18,3 +18,4 @@ MonoBehaviour:
   weapon_icon: {fileID: -5480349818986425464, guid: c030732880fdc4e4abcce6e430e0c9ed, type: 3}
   weapon_name: Gloves
   weapon_price: 55
+  attack_life: 1

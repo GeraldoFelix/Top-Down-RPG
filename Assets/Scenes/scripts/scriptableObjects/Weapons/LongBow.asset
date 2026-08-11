@@ -18,3 +18,4 @@ MonoBehaviour:
   weapon_icon: {fileID: -4137520926805428611, guid: c030732880fdc4e4abcce6e430e0c9ed, type: 3}
   weapon_name: LongBow
   weapon_price: 100
+  attack_life: 10

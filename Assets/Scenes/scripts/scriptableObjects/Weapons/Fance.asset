@@ -18,3 +18,4 @@ MonoBehaviour:
   weapon_icon: {fileID: 5225737282487368167, guid: c030732880fdc4e4abcce6e430e0c9ed, type: 3}
   weapon_name: Fance
   weapon_price: 50
+  attack_life: 3.5

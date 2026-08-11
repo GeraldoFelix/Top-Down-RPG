@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class MainManager : MonoBehaviour
 {
     public Slider hp_bar;
+    public Slider exp_bar;
 
     Entity player_stats;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -23,5 +24,9 @@ public class MainManager : MonoBehaviour
     {
         hp_bar.maxValue = player_stats.max_hp;
         hp_bar.value = player_stats.hp;
+
+        // exp
+        exp_bar.maxValue = player_stats.level * 100;
+        exp_bar.value = player_stats.exp;
     }
 }
