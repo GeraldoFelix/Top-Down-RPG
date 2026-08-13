@@ -2615,6 +2615,7 @@ MonoBehaviour:
   - {fileID: 421091329}
   - {fileID: 629043428}
   - {fileID: 2112066175}
+  damagepopup: {fileID: 1295177487284311301, guid: 49af94b124e1ed145a966d82a98ae232, type: 3}
 --- !u!1 &861585974
 GameObject:
   m_ObjectHideFlags: 0
@@ -3811,7 +3812,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.01, y: -9.92, z: 0}
-  m_LocalScale: {x: 0.6368, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

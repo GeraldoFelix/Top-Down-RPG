@@ -27,6 +27,8 @@ public class MainManager : MonoBehaviour
     public GameObject stats_screen;
 
     public Text[] stats_value;
+
+    public GameObject damagepopup;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

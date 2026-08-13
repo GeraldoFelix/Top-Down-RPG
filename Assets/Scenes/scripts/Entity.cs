@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Entity : MonoBehaviour
 {
@@ -54,6 +55,13 @@ public class Entity : MonoBehaviour
 
     public void LifeUpdate(float hp_to_update)
     {
+
+        GameObject new_bar = Instantiate(MainManager.Instance.damagepopup, this.gameObject.transform.position, Quaternion.identity);
+        new_bar.GetComponentInChildren<Rigidbody2D>().AddForce(new Vector2(Random.Range(-1, 1), 5), ForceMode2D.Impulse );
+
+        new_bar.GetComponentInChildren<Text>().text = hp_to_update.ToString();
+        Destroy(new_bar, 1);
+
         hp -= hp_to_update;
         Death();
     }
