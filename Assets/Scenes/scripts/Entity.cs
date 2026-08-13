@@ -18,6 +18,9 @@ public class Entity : MonoBehaviour
     public int level = 1;
     public int exp = 0;
 
+    public float bonus_attack = 0;
+    public float bonus_attack_speed = 0;
+
     void Start()
     {
         hp = max_hp;
@@ -35,7 +38,7 @@ public class Entity : MonoBehaviour
         {   
             // da ouro
             if (this.gameObject.tag != "Player") {
-                InventoryManager.Instance.GoldAdd(100);
+                InventoryManager.Instance.GoldAdd(gold_carry);
                 GameObject.FindGameObjectWithTag("Player").GetComponent<Entity>().AddExp(exp_carry);
             }
 
@@ -63,6 +66,9 @@ public class Entity : MonoBehaviour
         {
             level++;
             exp = 0;
+            MainManager.Instance.SetupLevelUp();
         }
     }
+
+
 }

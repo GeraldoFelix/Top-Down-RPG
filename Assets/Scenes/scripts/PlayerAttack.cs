@@ -27,7 +27,7 @@ public class PlayerAttack : MonoBehaviour
         {
             GameObject projectile_instance = Instantiate(square, transform.position, Quaternion.identity);
 
-            projectile_instance.GetComponent<ProjectileDamage>().damage = player_damage.attack_damage;
+            projectile_instance.GetComponent<ProjectileDamage>().damage = player_damage.attack_damage * ((player_damage.bonus_attack + 100)/100);
             projectile_instance.GetComponent<ProjectileDamage>().projectile_life = player_damage.attack_life;
 
             Vector2 projectile_direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
@@ -49,7 +49,7 @@ public class PlayerAttack : MonoBehaviour
 
     void cooldown_()
     {
-        if (cooldown > player_damage.attack_speed && can_attack==false)
+        if (cooldown > (player_damage.attack_speed * ((100 - player_damage.bonus_attack_speed)/100)) && can_attack==false)
         {
             can_attack = true;
         }
